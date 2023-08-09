@@ -16,3 +16,4 @@ switch (bebidaEscolhida) {
 }
 
 console.log(`Você escolheu ${bebidaEscolhida}. Valor a pagar: R$ ${valorBebida.toFixed(2)}`);
+//
