@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Reserva de Viagem Avançado</title>
+</head>
+<h1>Formulário de Reserva de Viagem Avançado</h1>
+<body>
+    <form method="GET" action=""><fieldset>
+        <legend>Informações do usuário e da viagem</legend>
+    <label>Nome</label><br>
+    <input type="text" name="nome"><br>
+    <label>Email</label><br>
+    <input type="text" required name="email"><br>
+    <label>Data ida</label><br>
+    <input type="date" name="dataIda"><br>
+    <label>Data Volta</label><br>
+    <input type="date" name="dataVolta"><br>
+    <label>Quantidade de pessoas</label><br>
+    <input type="number" name="qtdPessoas">
+    </fieldset>
+    <fieldset>
+    <legend>Serviços desejados</legend>
+   <label>
+    <input type="checkbox" name="compraPassagem" value="CompraPassagem">Compra de passagens
+   </label>
+    <label>
+        <input type="checkbox" name="aluguelVeiculo" value="aluguelVeiculo">Aluguel de veiculo 
+    </label>
+    <label>
+       <input type="checkbox" name="Hospedagem" value="Hospedagem">Hospedagem
+    </label>
+    </fieldset>
+    <fieldset>
+        <legend>Formas de pagamentos</legend>
+    <label>
+        <input type="radio" name="formaPagamento" value="cartãoCredito">Cartão de credito
+    </label> 
+    <label>
+        <input type="radio" name="formaPagamento" value="boleto">Boleto
+    </label>
+    <label>
+        <input type="radio" name="formaPagamento" value="pix">Pix
+    </label>
+    </fieldset>
+    <fieldset> Escolha o prazo para pagamento
+     <select name="prazoPagamento">
+        <option value="aVista" selected>á vista</option>
+        <option value="5x">5x Sem juros</option>
+        <option value="10x">10x com juros</option>
+     </select>
+    </fieldset>
+        <legend>Comentarios</legend>
+        <textarea rows="5" name="comentarios"></textarea><br>
+        <input type="submit" value="Enviar">
+    
+    </form>   
+</body>
+<footer>
+    <p>Desenvolvido por Miguel Santos Costa</p>
+</footer>
+</html>
